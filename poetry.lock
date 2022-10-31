@@ -36,17 +36,6 @@ async = ["asgiref (>=3.2)"]
 dotenv = ["python-dotenv"]
 
 [[package]]
-name = "flask-inflate"
-version = "0.3"
-description = "Inflate / Decompress gzipped requests"
-category = "main"
-optional = false
-python-versions = "*"
-
-[package.dependencies]
-Flask = "*"
-
-[[package]]
 name = "flask-pydantic"
 version = "0.11.0"
 description = "Flask extension for integration with Pydantic library"
@@ -128,7 +117,7 @@ watchdog = ["watchdog"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "715f7ae2b058043b14225c5662ff410556fe1600ddf40591c22a94abefa6c8f6"
+content-hash = "6fcbc513b8a484508c145492687daf09dd1ea2a5faa56f44a3775831f21d721d"
 
 [metadata.files]
 click = [
@@ -142,10 +131,6 @@ colorama = [
 flask = [
     {file = "Flask-2.2.2-py3-none-any.whl", hash = "sha256:b9c46cc36662a7949f34b52d8ec7bb59c0d74ba08ba6cb9ce9adc1d8676d9526"},
     {file = "Flask-2.2.2.tar.gz", hash = "sha256:642c450d19c4ad482f96729bd2a8f6d32554aa1e231f4f6b4e7e5264b16cca2b"},
-]
-flask-inflate = [
-    {file = "Flask-Inflate-0.3.tar.gz", hash = "sha256:3b3ddf1de750617c1b6483b38819d6bb6e7d66091fa43e6b1ef64f285d65f8ea"},
-    {file = "Flask_Inflate-0.3-py3-none-any.whl", hash = "sha256:18543cf2b65a96f1479a90e7017a57555e36b14e9f08f1f632df04e83d791313"},
 ]
 flask-pydantic = [
     {file = "Flask-Pydantic-0.11.0.tar.gz", hash = "sha256:eef679b24e34ffb02e24e1d998ac023007aa2b531927fdc2f9b8114a12c19bb4"},

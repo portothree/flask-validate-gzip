@@ -4,9 +4,9 @@ from flask import Blueprint, request, g, jsonify
 from flask.views import MethodView
 from flask_pydantic import validate
 from pydantic import validator
-from flask_inflate import inflate
 
 from app.pydantic_base_model import BaseModel
+from app.utils.inflate import inflate
 
 logger = logging.getLogger(__name__)
 
@@ -33,12 +33,11 @@ class CreateCommActionsBody(CreateCommActionsBodyRaw):
 
 class CommActionsView(JSONView):
     @inflate
-    @validate()
-    def post(body=CreateCommActionsBody):
+    @validate(body=CreateCommActionsBody)
+    def post(body):
+        print(body)
 
-        data = request.get_json()
-
-        return jsonify(data)
+        return jsonify({"status": "success"})
 
 
 def get_comm_actions_blueprint():
