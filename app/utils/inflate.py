@@ -9,8 +9,6 @@ def inflate(func):
     A decorator to inflate content of a single view function
     """
 
-    print("inflate")
-
     def wrapper(*args, **kwargs):
         _inflate_gzipped_content()
         return func(*args, **kwargs)
